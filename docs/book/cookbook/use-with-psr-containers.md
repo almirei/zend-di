@@ -43,7 +43,7 @@ class MyContainer implements ContainerInterface
 
     public function has($name)
     {
-        retrun $this->container->has($name) || $this->injector->canCreate($name);
+        return $this->container->has($name) || $this->injector->canCreate($name);
     }
 
     public function get($name)
